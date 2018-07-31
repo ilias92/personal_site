@@ -1,8 +1,5 @@
 # Configuration of Academic
 # Documentation: https://sourcethemes.com/academic/
-#
-# This file is formatted using TOML syntax - learn more at https://learnxinyminutes.com/docs/toml/
-# Each configuration section is defined by a name in square brackets (e.g. `[outputs]`).
 
 # The URL of your website.
 # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
@@ -15,7 +12,7 @@ title = "Ilias Ettayebi"
 # To display a copyright symbol, type `&copy;`.
 copyright = "&copy; 2018"
 
-theme = "academic"
+theme = "hugo-academic"
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
@@ -39,9 +36,11 @@ enableGitInfo = false
 [outputs]
   home = [ "HTML", "CSS", "RSS" ]
   section = [ "HTML", "RSS" ]
+  taxonomy = [ "HTML", "RSS" ]
+  taxonomyTerm = [ "HTML", "RSS" ]
 
 # Configure BlackFriday Markdown rendering.
-#   See: https://gohugo.io/getting-started/configuration/#configure-blackfriday
+#   See: https://gohugo.io/readfiles/bfconfig/
 [blackfriday]
   hrefTargetBlank = true  # `true` opens external links in a new tab.
   fractions = true  # `false` disables smart fractions (e.g. 5/12 formatted as a fraction).
@@ -50,7 +49,7 @@ enableGitInfo = false
 [params]
   # Color theme.
   #   Choose from `default`, `ocean`, `forest`, `coffee`, `dark`, or `1950s`.
-  color_theme = "default"
+  color_theme = "custom"
 
   # Font style.
   #   Choose from `default`, `classic`, or `playfair`.
@@ -58,27 +57,28 @@ enableGitInfo = false
 
   # Your details.
   name = "Ilias Ettayebi"
-  role = "Graduate Student in Cancer Biology"
+  role = "Graduate Student"
 
   # Organizations/Affiliations.
   #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
-  organizations = [ { name = "University of Toronto", url = "" } ]
+  organizations = [ { name = "Macalester College", url = "https://www.macalester.edu/" } ]
 
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
-  avatar = "avataaars.png"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
-  email = "ilias.ettayebi@gmail.com"
-  address = "101 College St. Toronto ON, Canada"
-  #office_hours = "Monday 10:00 to 13:00 or email for appointment"
-  #phone = "888 888 88 88"
-  #skype = "echo123"
-  #telegram = ""
+  avatar = "portrait.png"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
+  email = "lmyint@macalester.edu"
+  address = "Olin-Rice Science Center, Room 232"
+  office_hours = ""
+  phone = ""
+  skype = ""
+  telegram = ""
+  twitter = "lesliemyint"
 
   # Enable Keybase in Contact widget by entering your keybase.io username.
   keybase = ""
 
   # Discussion link (e.g. link to a forum, mailing list, or chat).
   #   Uncomment line below to use.
-  #   discussion = { name = "Discuss", url = "https://discourse.gohugo.io" }
+  # discussion = { name = "Discuss", url = "https://discourse.gohugo.io" }
 
   # Diplay a logo in navigation bar rather than title (optional).
   #   To enable, place an image in `static/img/` and reference its filename below. To disable, set the value to "".
@@ -105,7 +105,7 @@ enableGitInfo = false
   longitude = "-122.1697"
   zoom = 15
 
-  # Date and time format (refer to https://sourcethemes.com/academic/docs/customization/#date-format )
+  # Date and time format (refer to Go's date format: http://fuckinggodateformat.com )
   #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
   date_format = "Jan 2, 2006"
   #   Examples: "3:04 pm" or "15:04"
@@ -152,8 +152,8 @@ enableGitInfo = false
   #   For more info on the highlighting options, see:
   #   https://sourcethemes.com/academic/post/writing-markdown-latex/#highlighting-options
   highlight = true
-  highlight_languages = []
-  # highlight_style = "github"
+  highlight_languages = ["bash", "cs", "http", "javascript", "json", "markdown", "r", "xml", "yaml"]
+  highlight_style = "tomorrow-night-eighties"
 
   # Enable native social sharing buttons?
   sharing = true
@@ -192,7 +192,7 @@ enableGitInfo = false
 
   # Configuration of publication pages.
   [params.publications]
-    # Date format (refer to https://sourcethemes.com/academic/docs/customization/#date-format )
+    # Date format (refer to Go's date format: http://fuckinggodateformat.com )
     #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
     date_format = "January, 2006"
 
@@ -229,29 +229,33 @@ enableGitInfo = false
   [[params.social]]
     icon = "envelope"
     icon_pack = "fa"
-    link = "mailto:ilias.ettayebi@gmail.com"
+    link = "mailto:lmyint@macalester.edu"
 
   [[params.social]]
     icon = "twitter"
     icon_pack = "fa"
-    link = "//twitter.com/illio_92"
+    link = "//twitter.com/lesliemyint"
 
   [[params.social]]
     icon = "google-scholar"
     icon_pack = "ai"
-    link = "https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ"
+    link = "https://scholar.google.com/citations?hl=en&user=dWRpRisAAAAJ"
 
   [[params.social]]
     icon = "github"
     icon_pack = "fa"
-    link = "//github.com/ilias92"
+    link = "//github.com/lmyint"
 
-  # Link to a PDF of your resume/CV from the About widget.
-  # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-  # [[params.social]]
-  #   icon = "cv"
-  #   icon_pack = "ai"
-  #   link = "files/cv.pdf"
+  [[params.social]]
+    icon = "linkedin"
+    icon_pack = "fa"
+    link = "https://www.linkedin.com/in/leslie-myint-b9433bb4/"
+
+  [[params.social]]
+    icon = "orcid"
+    icon_pack = "ai"
+    link = "https://orcid.org/0000-0003-2478-0331"
+
 
 # Navigation Links
 #   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
@@ -267,36 +271,34 @@ enableGitInfo = false
   weight = 1
 
 [[menu.main]]
-  name = "Publications"
-  url = "#publications_selected"
-  weight = 2
-
-[[menu.main]]
   name = "Posts"
   url = "#posts"
-  weight = 3
-
-[[menu.main]]
-  name = "Projects"
-  url = "#projects"
-  weight = 4
+  weight = 2
 
 # [[menu.main]]
-#   name = "Teaching"
-#   url = "#teaching"
-#   weight = 5
+#   name = "Projects"
+#   url = "#projects"
+#   weight = 3
+
+[[menu.main]]
+  name = "Teaching"
+  url = "#teaching"
+  weight = 4
+
+[[menu.main]]
+  name = "CV"
+  url = "#cv"
+  weight = 5
+
+[[menu.main]]
+  name = "Fun"
+  url = "#fun"
+  weight = 6
 
 [[menu.main]]
   name = "Contact"
   url = "#contact"
-  weight = 6
-
-# Link to a PDF of your resume/CV from the menu.
-# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-# [[menu.main]]
-#    name = "CV"
-#    url = "files/cv.pdf"
-#    weight = 7
+  weight = 7
 
 # Taxonomies.
 [taxonomies]
