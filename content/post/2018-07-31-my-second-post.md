@@ -1,5 +1,5 @@
 ---
-title: My Second Post
+title: Intro to my blog
 author: Ilias
 date: '2018-07-31'
 slug: my-second-post
