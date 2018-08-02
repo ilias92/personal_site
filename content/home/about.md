@@ -31,5 +31,5 @@ weight = 5
 
 # Biography
 
-Ilias Ettayebi is a graduate student in the De Carvalho lab at Princess Margaret Cancer Centre. His interest include colon cancer stem cell biology, and the role antiviral immunity plays in targeting cancer stem cells. 
-His current project aims to explore the intersection between signalling pathways involved cancer stem cell maintenance, and potential therapeutic opportunities to target them.
+I am a graduate student in the [De Carvalho lab] (https://www.decarvalholab.org) at Princess Margaret Cancer Centre. My interests include colon cancer stem cell biology, and the role antiviral immunity plays in targeting cancer stem cells. 
+My current project aims to explore the intersection between signalling pathways involved cancer stem cell maintenance, and potential therapeutic opportunities to target them.
