@@ -24,7 +24,7 @@ publication = "In *Biorxiv*"
 
 # Abstract and optional shortened version.
 abstract = "Recent studies have shown that DNA methyltransferase inhibitors (DNMTi) can induce IRF7 activation and Type I/III interferon signaling through dsRNA-mediated viral mimicry in cancer cells. By performing a large pan-cancer analysis using TCGA data, we determined that IRF7 activation is associated with higher CD8 T cell tumor infiltration and higher cytolytic activity across multiple cancer types. Accordingly, we demonstrate that DNMTi treatment results in increased CD8 T cell tumor infiltration, enhanced cytolytic activity and CD8 T cell dependent tumor growth inhibition. Finally, we show that DNMTi triggers a process marked by the induction of viral mimicry directly on CD8 T cells, leading to activation of dsRNA sensing pathway, and up-regulation of T cell activation markers, effector cytokines, and Granzyme B. Taken together, our findings suggest that dsRNA sensing pathway activation in the immune compartment, through pharmacological DNA demethylation, is a viable strategy for boosting anti-tumor immune response."
-# abstract_short = "A short version of the abstract."
+abstract_short = ""
 
 # Featured image thumbnail (optional)
 image_preview = ""
