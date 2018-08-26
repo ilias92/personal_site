@@ -2,7 +2,7 @@
 title = "DNA-Demethylating Agents Enhance Cytolytic Activity of CD8 T Cells and Anti-Tumor Immunity"
 
 # Date first published.
-date = "2013-07-01"
+date = "2018-07-01"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
 authors = ["Helen Loo Yau", "Ankur Chakravarthy", "Felipe Campos de Almeida", "David Allard", "Rajat Singhania", "**Ilias Ettayebi**", "Shu Yi Shen", "Tiago Medina", "Parinaz Mehdipour", "Beatriz Morancho", "Sandra Pommey", "Christian Klein", "Gustavo Amarante-Mendes", "David Roulois", "Marcus Butler", "Joaquin Arribas", "John Stagg", "Daniel D De Carvalho"]
