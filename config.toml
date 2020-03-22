@@ -63,7 +63,11 @@ enableGitInfo = false
   organizations = [ { name = "Princess Margaret Cancer Centre", url = "" } ]
 
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
+<<<<<<< HEAD
   avatar = "avataaars.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
+=======
+  avatar = "Ilias_Image_Website.png"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
+>>>>>>> c3e1ad9dead9e19aaf6e7f4f9bf9306ca07ddf94
   email = "ilias.ettayebi@gmail.com"
   address = "101 College St. Toronto ON, Canada"
   #office_hours = "Monday 10:00 to 13:00 or email for appointment"
